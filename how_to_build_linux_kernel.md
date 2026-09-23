@@ -97,7 +97,8 @@ Four things to know about that one line:
 
 ## Step 6: Compile
 
-Now compile. Be warned that this can take a few hours.
+Now compile. Be warned that the first build can take a few hours. Later builds are incremental, so `make` recompiles only the files you changed and relinks the kernel, so a one-line edit in a `.c` file takes a few minutes. Editing `.config` or a widely included header, or running `make clean`, sends you back to a long build.
+
 
 - The build runs far longer than an idle SSH session usually survives, and when the connection drops your shell dies and takes `make` with it. Run it inside `screen`, which keeps the build alive on the VM whether or not you are still connected:
 
