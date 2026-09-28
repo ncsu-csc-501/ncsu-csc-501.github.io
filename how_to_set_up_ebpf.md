@@ -546,10 +546,7 @@ PID     COMM               CPU%   RUNS   AVG RUN
 34      ksoftirqd/3        0.1%      3   0.31 ms
 ```
 
-Reading the result:
-
-- `CPU%` follows the weights, as predicted.
-- `RUNS` stays equal. With only two tasks on the CPU, every context switch goes from one to the other, so they get the same number of turns no matter what. Nice changes how long each turn lasts.
+`CPU%` follows the weights, as predicted.
 
 If there is time left, try these:
 
