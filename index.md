@@ -3,3 +3,4 @@
 This site contains links to in-class activity documentation and other materials.
 
 [Developing the Linux Kernel](how_to_build_linux_kernel.md)
+[Using eBPF](how_to_set_up_ebpf.md)
